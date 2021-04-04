@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p a {
+  display: inline-flex;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, strong, i {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+form, input, label, textarea, option, select {
+  font-size: inherit;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+}
+
+body {
+  background-color: black;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    font-size: 80%;
+  }
+}
+
+.header_caja {
+  width: 90%;
+  padding: 1em;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: none;
+  align-items: center;
+}
+.header_h1 {
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  margin: 0.3em 0 0.2em;
+}
+.header_textos {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: center;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .header_textos {
+    width: 100%;
+  }
+}
+.header_prima {
+  display: none;
+}
+.header_prima.ver {
+  display: flex;
+}
+.header_enhora {
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top: 0;
+}
+.header_enhora.ver {
+  display: flex;
+}
+
+.main {
+  padding: 0.5em 0 0 0;
+}
+.main_p {
+  width: 100%;
+  font-weight: 700;
+  font-size: 0.8em;
+  margin: 0 0 1em;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main_p.ocultar {
+  display: none;
+}
+.main_container {
+  width: 100%;
+  min-height: 60vh;
+  margin-bottom: 2em;
+}
+.main_centrado {
+  width: 90%;
+  min-height: 350px;
+  margin: auto;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+@media screen and (max-width: 600px) {
+  .main_centrado {
+    min-height: 300px;
+  }
+}
+.main_caja {
+  width: calc( 50% - .5em);
+  max-height: 350px;
+  position: relative;
+}
+.main #vasov {
+  width: 100%;
+  min-height: 350px;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+}
+.main #vasov.ocultar {
+  display: none;
+}
+.main_proceso.vaso:hover {
+  animation: shake 0.8s;
+}
+.main_proceso {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  display: none;
+}
+.main_proceso.ver {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  animation: shake 0.8s;
+}
+.main_proceso.ocultar {
+  display: none;
+}
+.main_ingrediente {
+  width: 100%;
+  display: none;
+  max-height: 350px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  cursor: move;
+}
+.main_ingrediente.ver {
+  display: flex;
+  transition: all 0.6s ease-in-out;
+}
+.main_ingrediente.ocultar {
+  display: none;
+  overflow: hidden;
+}
+.main_caja1 {
+  width: 60%;
+  margin-top: 2em;
+  margin: auto;
+  position: relative;
+}
+.main_p1 {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em;
+  margin: 1em 0 0 5em;
+  position: absolute;
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+  .main_p1 {
+    margin-left: 3em;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .main_p1 {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .main_p1 {
+    margin-left: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main_p1 {
+    margin-left: -1em;
+  }
+}
+.main_p1.ver {
+  display: block;
+}
+.main_boton {
+  width: 90%;
+  min-height: 8em;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .main_boton {
+    margin: 2em 0 0 0;
+  }
+}
+.main_a {
+  padding: 1em;
+  text-transform: uppercase;
+  border: solid 0.1em white;
+  font-size: 1em;
+  font-weight: 700;
+  transition: all 0.8s ease;
+  display: none;
+}
+.main_a:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+.main_a.ver {
+  display: flex;
+}
+
+.coctel {
+  width: 100%;
+  position: relative;
+  margin-top: 1em;
+  transition: all 10s ease;
+}
+.coctel_vaso {
+  width: 100%;
+  max-height: 360px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.coctel_vaso.ver {
+  min-height: 360px;
+  max-height: 360px;
+  animation: aparecer 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcardi2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body class="body">
+
+    <header class="header">
+        <div class="header_caja">
+            <h1 class="header_h1"><img src="img/logo.png" alt="Logo"></h1>
+            <div class="header_textos">
+                <p class="header_prima ver" id="prima">Prepara un mojito y consigue un regalo en el PRIMAVERA SOUND</p>
+                <p class="header_enhora" id="enhora">¡enhorabuena!</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <p class="main_p" id="arrastra">Arrástra los ingredientes y descubre.</p>
+        <section class="main_container" id="container">
+            <div class="coctel">
+                <img class="coctel_vaso" src="img/vasop.png"        alt="coctel"    id="coctel1">
+                <img class="coctel_vaso" src="img/fondo.png"        alt="fondo"     id="fondo1"></img>
+                <img class="coctel_vaso" src="img/destelloizq.png"  alt="destello"  id="destelloizq">
+                <img class="coctel_vaso" src="img/destelloder.png"  alt="destello"  id="destelloder">
+            </div>
+            <div class="main_centrado">
+                <div class="main_caja cajap" id="caja1"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img class="main_proceso vaso" src="img/vav.png"    alt="vaso"      id="vasov">
+                    <img class="main_proceso" src="img/sodav.png"       alt="soda"      id="soda2">
+                    <img class="main_proceso" src="img/hielov.png"      alt="hielo"     id="hielo2">
+                    <img class="main_proceso" src="img/bacardiv.png"    alt="bacardi"   id="bacardi2">
+                    <img class="main_proceso" src="img/mentav.png"      alt="menta"     id="menta2">
+                    <img class="main_proceso" src="img/limav.png"       alt="lima"      id="lima2">
+                
+                </div>
+                <div class="main_caja" id="caja2" >
+                    <img class="main_ingrediente" src="img/soda_1.png"      id="soda1"      draggable="true"    ondragstart="drag(event)">
+                    <img class="main_ingrediente" src="img/hielo_1.png"     id="hielo1"     draggable="true"    ondragstart="drag(event)">
+                    <img class="main_ingrediente" src="img/bacardi_1.png"   id="barcardi"  draggable="true"     ondragstart="drag(event)">
+                    <img class="main_ingrediente" src="img/menta_v.png"     id="menta1"     draggable="true"    ondragstart="drag(event)">
+                    <img class="main_ingrediente ver" src="img/lima_1.png"  id="lima1"      draggable="true"    ondragstart="drag(event)">
+                </div>
+            </div>
+            <div class="main_caja1">
+                <p class="main_p1 ver"  id="lima3">Lima con Azúcar</p>
+                <p class="main_p1"      id="menta3">Menta</p>
+                <p class="main_p1"      id="bacardi3">Bacardi</p>
+                <p class="main_p1"      id="hielo3">Hielo</p>
+                <p class="main_p1"      id="soda3">Soda</p>
+            </div>
+            <div class="main_boton">
+                <a class="main_a" id="enlace" href="http://www.bacardi.com/" target="_blank">ven a por tu mojito bacardi</a>        
+            </div>
+        </section>
+        
+        
+    </main>
+    
+
+    
+    
+</body>
+</html>
